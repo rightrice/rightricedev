@@ -1,0 +1,25 @@
+# Local-only notes: every README except the root README.md
+README*
+!/README.md
+
+# Retired Aperture design, kept locally
+/archive/
+
+# macOS metadata
+.DS_Store
+._*
+
+# Tooling
+node_modules/
+.wrangler/
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets: never commit real values
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.env
+.env.*
+!.env.example

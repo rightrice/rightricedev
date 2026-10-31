@@ -1,0 +1,6 @@
+# Copy to .dev.vars for local HTTPS testing; never commit real secrets.
+TURNSTILE_SITE_KEY="replace-with-real-site-key"
+TURNSTILE_SECRET_KEY="replace-with-real-secret-key"
+CONTACT_HOSTNAMES="localhost"
+CONTACT_RELAY_URL="https://relay.example.com/contact"
+CONTACT_RELAY_TOKEN="replace-with-a-random-token-of-at-least-32-characters"

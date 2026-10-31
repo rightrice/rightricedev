@@ -1,0 +1,6 @@
+# Security contact for rightrice.dev (RFC 9116).
+# Report vulnerabilities through the contact form. Renew Expires before it passes.
+Contact: https://rightrice.dev/#contact
+Expires: 2027-10-29T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://rightrice.dev/.well-known/security.txt

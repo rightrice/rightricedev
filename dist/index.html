@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f1918">
+  <meta name="color-scheme" content="dark">
+  <title>rightrice — Cybersecurity & Software</title>
+  <meta name="description" content="rightrice's portfolio: offensive security, network infrastructure, and software development, plus freelance penetration testing and security work.">
+  <meta property="og:title" content="rightrice — Cybersecurity & Software">
+  <meta property="og:description" content="Offensive security. Resilient systems. Purpose-built software. Selected work by rightrice.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/jetbrains-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/console.js" defer></script>
+  <script src="/clock.js" defer></script>
+  <script src="/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="wordmark" href="#main" aria-label="rightrice home">rightrice<span aria-hidden="true">_</span></a>
+      <form id="cmd-form" class="cmd" autocomplete="off" hidden>
+        <label for="cmd" class="sr-only">Run a command</label>
+        <span class="cmd-prompt" aria-hidden="true">$</span>
+        <input id="cmd" name="cmd" maxlength="80" spellcheck="false" autocapitalize="off" placeholder="Type a command, or try help" aria-describedby="cmd-hint">
+        <kbd id="cmd-hint" title="Press / to focus">/</kbd>
+      </form>
+      <nav class="topnav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#lab">Lab</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="intro-heading">
+      <h1 id="intro-heading">Find the weakness.<br><span>Build the answer.</span></h1>
+      <p>Every command below is also a plain link. Use the keyboard or the mouse, whichever you prefer.</p>
+    </section>
+
+    <div class="console wrap">
+      <section id="terminal" class="term" aria-label="Terminal session">
+        <div class="term-bar" aria-hidden="true"><span>~/rightrice.dev</span><span>zsh · 120×36</span></div>
+        <div id="term-body" class="term-body">
+          <div class="block">
+            <p class="line"><span class="u">rightrice@dev</span><span class="p">:~$</span> whoami</p>
+            <p class="line">rightrice. L2 Technical Analyst; builds security tooling and software.</p>
+            <p class="line muted">offensive security · network infrastructure · software</p>
+            <p class="line ok">available for freelance penetration testing and security work</p>
+          </div>
+          <div class="block">
+            <p class="line"><span class="u">rightrice@dev</span><span class="p">:~$</span> ls -l work/</p>
+            <div class="ls">
+              <span class="muted">drwxr-x---</span><a class="dir" href="#lab">homelab/</a><span class="st">ongoing</span><span class="muted">sonicwall / linux / snmp</span>
+              <span class="muted">drwxr-x---</span><a class="dir" href="#mapleai">mapleai/</a><span class="st">in-development</span><span class="muted">security tooling / ai</span>
+              <span class="muted">drwxr-x---</span><a class="dir" href="#sapwatch">sapwatch/</a><span class="st">in-development</span><span class="muted">siem / log pipeline</span>
+            </div>
+          </div>
+          <div class="block">
+            <p class="line"><span class="u">rightrice@dev</span><span class="p">:~$</span> cat work/mapleai/README.md</p>
+            <div class="readme">
+              <p class="line strong"># MapleAI</p>
+              <p class="line">Bringing local intelligence to security work.</p>
+              <p class="line muted">Local models that use technical knowledge and system tools</p>
+              <p class="line muted">inside an authorized testing scope.</p>
+              <p class="line gap"><span class="muted">stack </span>  ibm-granite · ollama · local tooling</p>
+              <p class="line"><span class="muted">status</span>  <span class="st">active internal development</span></p>
+              <p class="line"><span class="muted">open  </span>  retrieval quality · tool execution · scope handling</p>
+            </div>
+          </div>
+          <div id="term-live" class="term-live" aria-live="polite"></div>
+          <p class="line" aria-hidden="true"><span class="u">rightrice@dev</span><span class="p">:~$</span> <span class="cursor"></span></p>
+        </div>
+      </section>
+
+      <aside class="side" aria-label="At a glance">
+        <section class="panel" aria-labelledby="session-heading">
+          <h2 id="session-heading" class="panel-title">Session</h2>
+          <dl class="session">
+            <dt>user</dt><dd>rightrice</dd>
+            <dt>based</dt><dd>New York</dd>
+            <dt>focus</dt><dd>Red team / Networks / Development</dd>
+          </dl>
+        </section>
+
+        <section class="panel" aria-labelledby="creds-heading">
+          <h2 id="creds-heading" class="panel-title">cat creds.txt</h2>
+          <ul class="creds">
+            <li><span>B.S. Cybersecurity, SUNY Canton<small>Cum Laude</small></span><span class="pill pill-ok">done</span></li>
+            <li><span>SonicWall SNSA</span><span class="pill pill-ok">done</span></li>
+            <li><span>Cisco CCNA</span><span class="pill pill-warn">in progress</span></li>
+            <li><span>Hack The Box CPTS</span><span class="pill pill-warn">in progress</span></li>
+          </ul>
+        </section>
+
+        <section class="panel" aria-labelledby="try-heading">
+          <h2 id="try-heading" class="panel-title">Try a command</h2>
+          <div class="chips">
+            <a class="chip" href="#terminal" data-cmd="help">help</a>
+            <a class="chip" href="#work" data-cmd="ls work/">ls work/</a>
+            <a class="chip" href="#about" data-cmd="cat about.md">cat about.md</a>
+            <a class="chip" href="https://github.com/rightrice" target="_blank" rel="noopener noreferrer">open github</a>
+            <a class="chip" href="#services" data-cmd="cat services.md">cat services.md</a>
+            <a class="chip chip-accent" href="#contact" data-cmd="contact">contact</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <section id="work" class="section" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="cmdline" aria-hidden="true"><span class="u">rightrice@dev</span><span class="p">:~$</span> ls -l work/</p>
+          <h2 id="work-heading" tabindex="-1">Built from curiosity.<br>Grounded in practice.</h2>
+          <p class="section-lead">A closer look at what I’m building, exploring, and putting to work.</p>
+        </div>
+
+        <div class="projects">
+          <article id="lab" class="project project-featured" aria-labelledby="lab-heading">
+            <div class="project-top"><span class="path">work/homelab/</span><span class="pill pill-ok">ongoing</span></div>
+            <p class="kicker">Infrastructure / SonicWall / Linux</p>
+            <h3 id="lab-heading" tabindex="-1">The home lab</h3>
+            <p class="project-lead">A full SonicWall firewall and a Linux server, set up to test assumptions about networks, security controls, and the systems behind them.</p>
+            <div class="lab-grid">
+              <section class="spec spec-wide" aria-labelledby="lab-fw-heading">
+                <h4 id="lab-fw-heading" class="spec-title"><span>firewall</span>SonicWall</h4>
+                <ul class="spec-list">
+                  <li>Zones and VLAN segmentation</li>
+                  <li>VPN</li>
+                  <li>Security services: Intrusion Prevention, Gateway Anti-Virus, Anti-Spyware, App Control, Content Filtering, Capture ATP</li>
+                  <li>DPI-SSL inspection, logging, and reporting</li>
+                  <li>SNMP monitoring</li>
+                  <li>SAML for user login</li>
+                  <li>VoIP configuration</li>
+                  <li>Geo-IP blocking</li>
+                  <li>Bandwidth controls</li>
+                  <li>Templates for quick installs</li>
+                  <li>Security Insight enhancements</li>
+                </ul>
+              </section>
+              <section class="spec" aria-labelledby="lab-srv-heading">
+                <h4 id="lab-srv-heading" class="spec-title"><span>server</span>Linux</h4>
+                <ul class="spec-list">
+                  <li>Self-hosted Linux services</li>
+                  <li>Storage and backups</li>
+                </ul>
+              </section>
+            </div>
+            <h4 class="subhead">How I use it</h4>
+            <ul class="uses">
+              <li><b>Attack practice</b><span>Attacking my own systems as hands-on prep for the CPTS.</span></li>
+              <li><b>Detection and logging</b><span>Reviewing the logs and alerts my own attacks produce.</span></li>
+              <li><b>Network monitoring</b><span>SNMP, device telemetry, and dashboards.</span></li>
+              <li><b>Hardening</b><span>Baselines, firewall rule reviews, and patch cycles.</span></li>
+            </ul>
+            <details>
+              <summary>Inside the lab</summary>
+              <div class="detail-body">
+                <p>My lab brings together SonicWall firewalls, wireless infrastructure, Linux systems, and monitoring. It gives me a place to experiment with segmentation, troubleshoot device telemetry, and work through security scenarios.</p>
+                <p>Current areas of exploration include SNMP monitoring, firewall configuration, and local AI tooling on Kali Linux.</p>
+              </div>
+            </details>
+          </article>
+
+          <article id="mapleai" class="project project-featured" aria-labelledby="mapleai-heading">
+            <div class="project-top"><span class="path">work/mapleai/</span><span class="pill pill-warn">in development</span></div>
+            <div class="project-grid">
+              <div class="project-story">
+                <p class="kicker">Security tooling / AI</p>
+                <h3 id="mapleai-heading">MapleAI</h3>
+                <p class="project-lead">Bringing local intelligence to security work.</p>
+                <p>A project exploring how local language models can use technical knowledge and system tools within an authorized testing scope.</p>
+                <ul class="tags" aria-label="Project technologies"><li>IBM Granite</li><li>Ollama</li><li>Local tooling</li></ul>
+                <details>
+                  <summary>Explore the project</summary>
+                  <div class="detail-body">
+                    <h4>The problem</h4>
+                    <p>A model that only produces text cannot carry out a practitioner’s workflow. Useful assistance needs access to relevant knowledge, local tools, and clear scope boundaries.</p>
+                    <h4>What I’m working on</h4>
+                    <p>A knowledge pipeline for technical writeups, local model experimentation, and tool integration. The goal is to interpret engagement scope and support authorized security testing.</p>
+                    <h4>Current stage</h4>
+                    <p>Active internal development. Retrieval quality, tool execution, and scope handling are areas of ongoing work.</p>
+                  </div>
+                </details>
+              </div>
+              <figure class="flow" role="img" aria-label="Planned architecture: engagement scope and technical knowledge feed the local model, which connects to system tools, with findings reviewed by the practitioner.">
+                <div class="flow-row"><span>Engagement scope</span><span>Technical knowledge</span></div>
+                <span class="flow-link" aria-hidden="true"></span>
+                <div class="flow-model"><strong>Local model</strong><span>IBM Granite + Ollama</span></div>
+                <span class="flow-link" aria-hidden="true"></span>
+                <div class="flow-row"><span>System tools</span><span class="flow-arrow" aria-hidden="true">→</span><span>Practitioner review</span></div>
+                <figcaption>Scope-aware by design</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article id="sapwatch" class="project project-featured" aria-labelledby="sapwatch-heading">
+            <div class="project-top"><span class="path">work/sapwatch/</span><span class="pill pill-warn">in development</span></div>
+            <div class="project-grid">
+              <div class="project-story">
+                <p class="kicker">Security monitoring / SIEM</p>
+                <h3 id="sapwatch-heading">SapWatch</h3>
+                <p class="project-lead">A multi-tenant SIEM that turns firewall, network, and endpoint logs from many sites into one clear security picture.</p>
+                <p>SapWatch collects telemetry from firewalls, wireless networks, endpoints, and cloud security tools, normalizes it into one event format, and runs detections across it. Each client gets a read-only view of their own alerts and the health of their sources, and nothing more.</p>
+                <ul class="tags" aria-label="Project technologies"><li>Python</li><li>Vector</li><li>OpenSearch</li><li>Redpanda</li><li>PostgreSQL</li><li>Wazuh</li><li>Sysmon</li><li>Sigma</li></ul>
+                <details>
+                  <summary>Explore the project</summary>
+                  <div class="detail-body">
+                    <h4>What it collects</h4>
+                    <p>SonicWall and FortiGate firewall syslog, UniFi network events, SNMPv3 device health, and NetFlow/IPFIX traffic records. Windows and Linux endpoints report through Wazuh, with a version-controlled Sysmon configuration and Linux audit rules. Huntress EDR incidents and Microsoft 365 audit logs (sign-ins, directory and mailbox changes, file activity) come in through their cloud APIs.</p>
+                    <h4>How it works</h4>
+                    <p>A collector at each site receives syslog, buffers it to disk, and forwards it over mutual TLS. A central ingestion gateway authenticates every collector, enforces tenant boundaries, and audits what it accepts. Events are normalized and deduplicated, then checked by a shared detection engine that runs SapWatch’s own rules alongside SigmaHQ’s community rules for Windows and Linux. Results are indexed for search and pushed to the client portal in batches that are safe to retry.</p>
+                    <h4>Security by design</h4>
+                    <p>Every integration has tenant-isolation tests. Collector credentials are stored as SHA-256 hashes, checked in constant time, and can be rotated or revoked. The client view is read-only: clients see alerts and source health but cannot change collectors, detections, or retention.</p>
+                    <h4>Current stage</h4>
+                    <p>In development, with over 300 Python modules and about 100 test files. Parsers, detections, and pipelines are tested offline against sample data; validation against live hardware and vendor accounts comes next.</p>
+                  </div>
+                </details>
+              </div>
+              <figure class="flow" role="img" aria-label="SapWatch pipeline: firewalls and Wi-Fi, endpoints, and cloud security tools feed an ingestion gateway that authenticates collectors, enforces tenancy, and audits. Events are then normalized and checked by detections, indexed for search and alerts, and shown in a read-only client view.">
+                <div class="flow-row"><span>Firewalls &amp; Wi-Fi</span><span>Endpoints</span><span>Cloud tools</span></div>
+                <span class="flow-link" aria-hidden="true"></span>
+                <div class="flow-model"><strong>Ingestion gateway</strong><span>auth · tenancy · audit</span></div>
+                <span class="flow-link" aria-hidden="true"></span>
+                <div class="flow-row"><span>Normalize &amp; detect</span><span class="flow-arrow" aria-hidden="true">→</span><span>Search &amp; alerts</span></div>
+                <figcaption>Read-only client view</figcaption>
+              </figure>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="cmdline" aria-hidden="true"><span class="u">rightrice@dev</span><span class="p">:~$</span> cat about.md</p>
+          <h2 id="about-heading" tabindex="-1">Curiosity, put to work.</h2>
+        </div>
+        <div class="about">
+          <p class="about-lead">A cybersecurity professional with a developer’s mindset and a hands-on approach to systems.</p>
+          <div class="about-copy">
+            <p>I work as a Level 2 Technical Analyst and build my own software and cybersecurity projects. My interests span red-team work, network infrastructure, and iOS development.</p>
+            <p>I’m drawn to the work that happens beneath the surface: understanding a protocol, tracing an unexpected result, or building a tool that makes a difficult task easier.</p>
+          </div>
+        </div>
+        <section class="skills" aria-labelledby="skills-heading">
+          <h3 id="skills-heading" class="subhead">Skills and tools</h3>
+          <dl class="skills-list">
+            <div><dt>Network security</dt><dd>SonicWall (SNSA certified) · zones and VLANs · VPN · DPI-SSL · Geo-IP blocking · bandwidth controls · SAML login · VoIP · Cisco CCNA in progress</dd></div>
+            <div><dt>Systems</dt><dd>Linux services · storage and backups · SNMP monitoring · Kali Linux</dd></div>
+            <div><dt>Offensive security</dt><dd>Attack practice in my own lab · Hack The Box CPTS in progress</dd></div>
+            <div><dt>Defense</dt><dd>SIEM pipelines · detection rules, including Sigma · logging and detection · hardening and patching · firewall rule reviews</dd></div>
+            <div><dt>Software and AI</dt><dd>iOS development · local language models with IBM Granite and Ollama</dd></div>
+          </dl>
+        </section>
+        <h3 class="subhead">How I think</h3>
+        <div class="approach">
+          <article>
+            <span class="approach-no">/ 01 · offensive security</span>
+            <h4>Think like an attacker.</h4>
+            <p>Question the assumptions. Follow the attack surface. Look for the gap between how a system is intended to work and how it actually behaves.</p>
+          </article>
+          <article>
+            <span class="approach-no">/ 02 · systems &amp; networks</span>
+            <h4>Know the infrastructure.</h4>
+            <p>Understand the network, the endpoints, and the dependencies. Good security decisions start with knowing what keeps the environment running.</p>
+          </article>
+          <article>
+            <span class="approach-no">/ 03 · software &amp; iOS</span>
+            <h4>Build with purpose.</h4>
+            <p>Turn recurring problems into tools. Bring a developer’s perspective to testing, automation, and the software people depend on.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="cmdline" aria-hidden="true"><span class="u">rightrice@dev</span><span class="p">:~$</span> cat services.md</p>
+          <h2 id="services-heading" tabindex="-1">Freelance penetration testing<br>and security work.</h2>
+          <p class="section-lead">Available for freelance engagements. Testing only happens with written authorization and an agreed scope.</p>
+        </div>
+        <div class="services">
+          <article class="service">
+            <span class="service-tag">offense</span>
+            <h3>Penetration testing</h3>
+            <p>Network and web application testing that looks for the gap between how a system is meant to work and how it actually behaves.</p>
+          </article>
+          <article class="service">
+            <span class="service-tag">network</span>
+            <h3>Firewall and network reviews</h3>
+            <p>SonicWall configuration reviews covering zones, VLAN segmentation, VPN, security services, and firewall rules.</p>
+          </article>
+          <article class="service">
+            <span class="service-tag">detection</span>
+            <h3>Logging and detection</h3>
+            <p>Getting firewall, endpoint, and cloud logs into one place, then writing detections for the activity you care about.</p>
+          </article>
+          <article class="service">
+            <span class="service-tag">defense</span>
+            <h3>Hardening</h3>
+            <p>Baselines, patching, and configuration reviews for networks and Linux servers.</p>
+          </article>
+        </div>
+        <h3 class="subhead">How an engagement works</h3>
+        <ol class="steps">
+          <li><b>Scope</b><span>We agree in writing on targets, timing, and rules of engagement.</span></li>
+          <li><b>Test</b><span>I test only what is in scope and tell you right away if something critical turns up.</span></li>
+          <li><b>Report</b><span>You get findings ranked by risk, with clear steps to fix each one.</span></li>
+        </ol>
+        <a class="cta" href="#contact">Start a conversation</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="cmdline" aria-hidden="true"><span class="u">rightrice@dev</span><span class="p">:~$</span> contact --new</p>
+          <h2 id="contact-heading" tabindex="-1">Have something in mind?</h2>
+          <p class="section-lead">For freelance penetration testing and security work, project inquiries, or questions.</p>
+        </div>
+        <form id="contact-form" class="panel contact-form" method="post" action="/api/contact" aria-describedby="contact-notice">
+          <div class="contact-fields">
+            <label for="contact-name">Name<input id="contact-name" name="name" autocomplete="name" maxlength="100" required></label>
+            <label for="contact-email">Email<input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required></label>
+          </div>
+          <label for="contact-message">Message<textarea id="contact-message" name="message" rows="7" maxlength="5000" required></textarea></label>
+          <div hidden aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <p id="contact-notice" class="contact-notice">My email filters malicious links by the way. Courtesy of my SonicWall. :)</p>
+          <div id="contact-challenge"></div>
+          <div class="contact-actions"><button id="contact-submit" type="submit" disabled>Send message</button><button id="contact-retry" type="button" hidden>Retry security check</button></div>
+          <p id="contact-status" class="contact-status" role="status" aria-live="polite">Loading security check…</p>
+          <noscript><p>JavaScript is required to complete the security check and send a message.</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="statusbar">
+    <div class="wrap statusbar-inner">
+      <div class="status-left">
+        <nav class="tabs" aria-label="Sections">
+          <span class="session-tag">rightrice</span>
+          <a href="#work" data-tab="work">0:work</a>
+          <a href="#lab" data-tab="lab">1:lab</a>
+          <a href="#about" data-tab="about">2:about</a>
+          <a href="#services" data-tab="services">3:services</a>
+          <a href="#contact" data-tab="contact">4:contact</a>
+        </nav>
+        <p>© <span id="year">2026</span> rightrice · <a href="https://github.com/rightrice" target="_blank" rel="noopener noreferrer">github.com/rightrice</a> · <a href="/.well-known/security.txt">security.txt</a></p>
+      </div>
+      <div id="clock" class="clock" role="img" aria-label="Your local time" hidden>
+        <span class="clock-text" aria-hidden="true">
+          <span id="clock-time" class="clock-time"></span>
+          <span id="clock-zone"></span>
+          <span>your local time</span>
+        </span>
+        <svg class="clock-face" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false">
+          <circle class="clock-dial" cx="24" cy="24" r="21"/>
+          <line id="hand-hour" class="hand" x1="24" y1="24" x2="24" y2="14"/>
+          <line id="hand-minute" class="hand" x1="24" y1="24" x2="24" y2="9"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
